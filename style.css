@@ -38,21 +38,32 @@ body {
 .password-container,  #enter-password {
     width: 350px;
     height: 40px;
-    align-content: center;
+    display: flex;
+    align-items: center;
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #00000092;
-    border: none;
+    border: grey solid 3px;
+    outline: none;
     border-radius: 2px;
     margin-top: 35px;
-    padding-left: 3px;
+    padding-left: 6px;
+    cursor:default;
+    position: relative;
+}
+#enter-password {
+    color: black;
 }
 i {
+    position: absolute;
+    right: 3%;
+
     font-size: 1.2rem;
     margin-left: 245px;
     align-content: center;
     cursor: pointer;
+
 }
 i:hover {
     color: #000;
